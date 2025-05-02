@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#E8C1C5;
+    transition: background-color 0.3s, color 0.3s;
+}
+  
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+}
+  
+h1 {
+    font-size: 2em;
+    color: #2d2d2d;
+    margin-bottom: 20px;
+}
+  
+.input-group {
+    display: flex;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+  
+input[type="text"] {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+}
+  
+button {
+    background-color:#D499B9;
+    color:#2E294E;
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer; /*pour l'apparence*/
+    font-weight: bold;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+  
+  button:hover {
+    background-color:#9055A2;
+}
+  
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+  
+li {
+    display: flex; /*utilise pour montre  comment s'affiche et interagir avex=c les autre elt*/
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #333;
+}
+  
+li input[type="checkbox"] {
+    margin-right: 10px;
+}
+  
+li.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+  
+.Notes {
+    background-color:#9055A2;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: left;
+    margin-top: 30px;
+}
+  
+textarea {
+    width: 100%;
+    border-radius: 10px;
+    padding: 3px;
+    margin-top:4px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+  
+body.dark {
+    background-color: #1f1f1f;
+    color: #f1f0e8;
+}
+body.dark .container h1,
+body.dark .Notes,
+body.dark li {
+    color: #fff;
+}
+body.dark li,
+body.dark .Notes {
+    background-color: #3e3e3e;
+}
+body.dark button {
+    background-color: #888;
+}
+body.dark input,
+body.dark textarea {
+    background-color: #2e2e2e;
+    color: white;
+}
+  
